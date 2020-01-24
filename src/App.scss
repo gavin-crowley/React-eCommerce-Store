@@ -1,19 +1,26 @@
-:root {
-  --mainBlue: #2a2a72;
-  --lightBlue: #009ffd;
+ :root {
+  // --mainBlue: #2a2a72;
+  --mainBlue: #1d1b1b;
+  // --lightBlue: #009ffd;
+  --lightBlue: #2ea1e4;
   --mainWhite: #f3f3f3;
   --mainDark: #232528;
-  --mainDark: #000;
+  --mainDark: #1d1b1b;
   --mainYellow: #ffa400;
 }
 
 body {
-  font-family: "Oswald", sans-serif !important;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
+
 }
 .text-title {
-  font-family: "Permanent Marker", cursive;
+  // font-family: "Permanent Marker", cursive;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif !important;
+
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
@@ -42,4 +49,4 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
   color: var(--mainYellow);
-}
+} 

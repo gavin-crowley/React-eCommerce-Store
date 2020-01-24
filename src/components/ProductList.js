@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import Product from "./Product";
-import Title from "./Title";
+// import Title from "./Title";
 import { storeProducts } from "../data";
 import styled from "styled-components";
 import { ProductConsumer } from "../context";
+
+import { Featured } from "./ProductList-styles"
 export default class ProductList extends Component {
   state = {
     products: storeProducts
@@ -11,9 +13,13 @@ export default class ProductList extends Component {
   render() {
     return (
       <React.Fragment>
+        <Featured>
         <ProductWrapper className="py-5">
           <div className="container">
-            <Title name="our" title="products" />
+            {/* <Title name="our" title="products" /> */}
+            <h2>
+              <span>Products</span>
+            </h2>
             <div className="row">
               <ProductConsumer>
                 {value => {
@@ -25,6 +31,7 @@ export default class ProductList extends Component {
             </div>
           </div>
         </ProductWrapper>
+        </Featured>
       </React.Fragment>
     );
   }
